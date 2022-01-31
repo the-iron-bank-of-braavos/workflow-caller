@@ -3,7 +3,11 @@ name: Reusable Workflows
 on: push
 
 jobs:
-  call-workflow:
+  call-maven-workflow:
     uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven.yml@main
     with:
       message: "Hello Workd desde Maven"
+  call-node-workflow:
+    uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/node.install_and_build.yaml@main
+    with:
+      message: "Hello Workd desde Node"
