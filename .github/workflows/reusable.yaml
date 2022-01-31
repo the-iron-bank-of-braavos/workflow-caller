@@ -6,4 +6,4 @@ jobs:
   call-workflow:
     uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven.yml@main
     with:
-      message: "Hello Maven Workd"
+      message: "Hello Workd desde Maven"
