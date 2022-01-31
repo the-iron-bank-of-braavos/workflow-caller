@@ -6,7 +6,6 @@ jobs:
   reusable_workflow_job:
     runs-on: ubuntu-latest
     environment: production
-    steps:
-      - uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven/build_and_push.yaml@main
-        with:
-          message: "Hello World!"
+    uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven/build_and_push.yaml@main
+      with:
+        message: "Hello World!"
