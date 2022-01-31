@@ -4,6 +4,7 @@ on: push
 
 jobs:
   call-workflow:
-    uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven.build_and_push.yaml@main
+    runs-on: ubuntu-latest
+    uses: the-iron-bank-of-braavos/reusable-workflow/blob/main/.guthub/workflows/maven.build_and_push.yaml@main
     with:
       message: "Hello World"
