@@ -3,9 +3,7 @@ name: Reusable Workflows
 on: push
 
 jobs:
-  reusable_workflow_job:
-    runs-on: ubuntu-latest
-    environment: production
+  call-workflow:
     uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven/build_and_push.yaml@main
-      with:
-        message: "Hello World!"
+    with:
+      message: Hello World
