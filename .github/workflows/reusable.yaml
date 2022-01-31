@@ -4,8 +4,7 @@ on: push
 
 jobs:
   call-workflow:
-    steps:
-      - name: POC Reusable Workflow
-        uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven.yml@main
-        with:
-          message: "Hello World"
+    name: POC Reusable Workflow
+    uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven.yml@main
+    with:
+      message: "Hello Maven World"
