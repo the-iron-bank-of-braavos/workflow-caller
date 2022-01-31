@@ -4,7 +4,7 @@ on: push
 
 jobs:
   call-maven-workflow:
-    uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/mvn/maven.build-and-push.yml@main
+    uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven.build-and-push.yml@main
     with:
       message: "Hello Workd desde Maven"
   call-node-workflow:
