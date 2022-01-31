@@ -7,4 +7,4 @@ jobs:
     name: POC Reusable Workflow
     uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven.yml@main
     with:
-      message: "Hello Maven World"
+      message: "Hello World"
