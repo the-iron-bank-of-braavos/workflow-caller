@@ -8,6 +8,7 @@ jobs:
     with:
       message: "Hello Workd desde Maven"
   call-node-workflow:
+    needs: call-maven-workflow
     uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/node.install_and_build.yaml@main
     with:
       message: "Hello Workd desde Node actualizado"
