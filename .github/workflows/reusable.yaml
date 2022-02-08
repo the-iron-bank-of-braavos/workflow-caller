@@ -1,14 +1,14 @@
 name: Reusable Workflows
 
-on: push
+on: 
+  push:
+    branches:    
+      - 'action-validator'
 
 jobs:
-  call-maven-workflow:
-    uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/maven.build-and-push.yml@main
+  action-validator:
+    uses: the-iron-bank-of-braavos/action-validator/.github/workflows/test.yml@main
     with:
-      message: "Hello Workd desde Maven"
-  call-node-workflow:
-    needs: call-maven-workflow
-    uses: the-iron-bank-of-braavos/reusable-workflow/.github/workflows/node.install_and_build.yaml@main
-    with:
-      message: "Hello Workd desde Node actualizado"
+      origin-repo: https://github.com/actions/github-script.git
+      commit-sha: e3cbab9
+      target-repo: test-cloned-action
