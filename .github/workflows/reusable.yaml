@@ -11,5 +11,4 @@ jobs:
     with:
       origin-repo: https://github.com/actions/github-script.git
       commit-sha: e3cbab9
-      target-repo: test-cloned-action
-      
+      target-repo: the-iron-bank-of-braavos/test-cloned-action
